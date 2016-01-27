@@ -208,7 +208,7 @@ void cimc_didSelectRowAtIndexPath(id self, SEL _cmd, id tableView, id indexPath)
 
 - (void)firstSegment:(id)firstObj :(id)thirdSegment :(id)thirdObj
 {
-    NSLog(@"%s", __FUNCTION__);
+    NSLog(@"%@", NSStringFromSelector(_cmd));
     NSLog(@"args[] = {%@, %@, %@}", firstObj, thirdSegment, thirdObj);
 }
 
