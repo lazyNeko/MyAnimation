@@ -37,6 +37,7 @@
     [layer setContents:(id)[UIImage imageNamed:@"share_wx"].CGImage];
     [self.view.layer addSublayer:layer];
     //    [self.view addSubview:view];
+    layer.delegate = self;
 }
 
 - (void)translationAnimation:(CGPoint)location
@@ -48,7 +49,7 @@
     animation.toValue = value;
     animation.duration = 2;
     animation.removedOnCompletion = NO;
-    animation.delegate = self;
+//    animation.delegate = self;
     [animation setValue:value forKey:@"location"];
     [layer addAnimation:animation forKey:@"KCBasicAnimation_Position"];
 }

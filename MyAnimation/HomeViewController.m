@@ -12,6 +12,10 @@
 #import "TransitionViewController.h"
 #import "Quartz2DViewController.h"
 #import "ExternFunction.h"
+#import "DrawGraphicsViewController.h"
+#import "RingViewController.h"
+#import "OpenGLViewController.h"
+#import "ImageFilterViewController.h"
 
 #import <objc/runtime.h>
 
@@ -179,6 +183,35 @@ void cimc_didSelectRowAtIndexPath(id self, SEL _cmd, id tableView, id indexPath)
     manager.delegate = self;
 }
 
+int* getRow(int rowIndex, int* returnSize) {
+    // if (!rowIndex){
+    //     *returnSize = 0;
+    //     return NULL;
+    // }
+    
+    *returnSize = rowIndex + 1;
+    int *preArray = NULL, *curArray = NULL;
+    
+    for (int i = 0; i <= rowIndex; i++)
+    {
+        curArray = malloc(sizeof(int) * (i+1));
+        curArray[0] = curArray[i] = 1;
+        
+        for (int j = 1; j < i; j++)
+        {
+            curArray[j] = preArray[j-1] + preArray[j];
+            printf("%i+%i,", preArray[j-1], preArray[j]);
+        }
+        
+        if (preArray) free(preArray);
+        
+        preArray = curArray;
+    }
+    
+    printf("\n");
+    return curArray;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -194,7 +227,7 @@ void cimc_didSelectRowAtIndexPath(id self, SEL _cmd, id tableView, id indexPath)
 
 - (void)initData
 {
-    titleArray = @[@"Basic Animation", @"Keyframe Animation", @"Transition Animation", @"Quartz 2D"];
+    titleArray = @[@"Draw Graphics", @"Basic Animation", @"Keyframe Animation", @"Transition Animation", @"Quartz 2D", @"Ring", @"OpenGL", @"Image Filter"];
 }
 
 - (void)loadSubview
@@ -258,13 +291,21 @@ void cimc_didSelectRowAtIndexPath(id self, SEL _cmd, id tableView, id indexPath)
     UIViewController *vc;
     
     if (indexPath.row == 0)
-        vc = [[BasicAnimationViewController alloc] init];
+        vc = [[DrawGraphicsViewController alloc] init];
     else if (indexPath.row == 1)
-        vc = [[KeyAnimationViewController alloc] init];
+        vc = [[BasicAnimationViewController alloc] init];
     else if (indexPath.row == 2)
-        vc = [[TransitionViewController alloc] init];
+        vc = [[KeyAnimationViewController alloc] init];
     else if (indexPath.row == 3)
+        vc = [[TransitionViewController alloc] init];
+    else if (indexPath.row == 4)
         vc = [[Quartz2DViewController alloc] init];
+    else if (indexPath.row == 5)
+        vc = [[RingViewController alloc] init];
+    else if (indexPath.row == 6)
+        vc = [[OpenGLViewController alloc] init];
+    else if (indexPath.row == 7)
+        vc = [[ImageFilterViewController alloc] init];
     
     [self.navigationController pushViewController:vc animated:YES];
 }

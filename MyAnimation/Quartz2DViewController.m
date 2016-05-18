@@ -10,7 +10,9 @@
 #import "KCView.h"
 
 @interface Quartz2DViewController ()
-
+{
+    KCView *kcView;
+}
 @end
 
 @implementation Quartz2DViewController
@@ -30,10 +32,25 @@
 
 - (void)loadSubview
 {
-    KCView *view = [[KCView alloc] init];
-    view.frame = CGRectMake(50, 100, 300, 400);
-    view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:view];
+    kcView = [[KCView alloc] init];
+    kcView.frame = CGRectMake(50, 100, 300, 400);
+    kcView.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:kcView];
+    
+    UISlider *slider = [[UISlider alloc] init];
+    slider.frame = CGRectMake(15, 310, 300, 30);
+    slider.minimumValue = 0;
+    slider.maximumValue = 1;
+    [slider addTarget:self action:@selector(progressChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    [self.view addSubview:slider];
+    
+    [kcView drawMutableLine:0.0];
 }
 
+- (void)progressChanged:(UISlider *)sender
+{
+    [kcView drawMutableLine:sender.value];
+}
 @end

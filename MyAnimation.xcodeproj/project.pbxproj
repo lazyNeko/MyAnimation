@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0476D81CBDDE0B00F3D206 /* RingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0476D71CBDDE0B00F3D206 /* RingViewController.m */; };
+		4E0476DE1CBE11FA00F3D206 /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0476DD1CBE11FA00F3D206 /* OpenGLViewController.m */; };
+		4E0476E11CBE129E00F3D206 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0476E01CBE129E00F3D206 /* OpenGLView.m */; };
+		4E0476E41CBE2B3D00F3D206 /* ImageFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0476E31CBE2B3D00F3D206 /* ImageFilterViewController.m */; };
+		4E6081DB1CB5F4DC00A6E73A /* DrawGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6081DA1CB5F4DC00A6E73A /* DrawGraphicsViewController.m */; };
 		4E8C524D1BA11C7400118205 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C524C1BA11C7400118205 /* main.m */; };
 		4E8C52501BA11C7400118205 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C524F1BA11C7400118205 /* AppDelegate.m */; };
 		4E8C52581BA11C7400118205 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C52571BA11C7400118205 /* Images.xcassets */; };
@@ -26,6 +31,8 @@
 		4E8C528F1BA15BB200118205 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C528E1BA15BB200118205 /* 4.jpg */; };
 		4E90FF531BA2AE6C0082BA78 /* KCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF521BA2AE6C0082BA78 /* KCView.m */; };
 		4E90FF561BA2B0040082BA78 /* Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E90FF551BA2B0040082BA78 /* Quartz2DViewController.m */; };
+		4EA44C251CABADB600BDE588 /* BrokenLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA44C241CABADB600BDE588 /* BrokenLine.m */; };
+		4EDAD90F1CB77FA50039317F /* KCLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDAD90E1CB77FA50039317F /* KCLayer.m */; };
 		4EF43CCB1BF43F46006D87DA /* ExternFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF43CC91BF43F46006D87DA /* ExternFunction.m */; };
 		4EF43CCD1BF4708A006D87DA /* Image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EF43CCC1BF4708A006D87DA /* Image.bundle */; };
 /* End PBXBuildFile section */
@@ -41,6 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0476D61CBDDE0B00F3D206 /* RingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingViewController.h; sourceTree = "<group>"; };
+		4E0476D71CBDDE0B00F3D206 /* RingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RingViewController.m; sourceTree = "<group>"; };
+		4E0476DC1CBE11FA00F3D206 /* OpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
+		4E0476DD1CBE11FA00F3D206 /* OpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
+		4E0476DF1CBE129E00F3D206 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		4E0476E01CBE129E00F3D206 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		4E0476E21CBE2B3D00F3D206 /* ImageFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFilterViewController.h; sourceTree = "<group>"; };
+		4E0476E31CBE2B3D00F3D206 /* ImageFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFilterViewController.m; sourceTree = "<group>"; };
+		4E6081D91CB5F4DC00A6E73A /* DrawGraphicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawGraphicsViewController.h; sourceTree = "<group>"; };
+		4E6081DA1CB5F4DC00A6E73A /* DrawGraphicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawGraphicsViewController.m; sourceTree = "<group>"; };
 		4E8C52471BA11C7400118205 /* MyAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8C524B1BA11C7400118205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E8C524C1BA11C7400118205 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +88,10 @@
 		4E90FF521BA2AE6C0082BA78 /* KCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCView.m; sourceTree = "<group>"; };
 		4E90FF541BA2B0040082BA78 /* Quartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2DViewController.h; sourceTree = "<group>"; };
 		4E90FF551BA2B0040082BA78 /* Quartz2DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2DViewController.m; sourceTree = "<group>"; };
+		4EA44C231CABADB600BDE588 /* BrokenLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrokenLine.h; sourceTree = "<group>"; };
+		4EA44C241CABADB600BDE588 /* BrokenLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokenLine.m; sourceTree = "<group>"; };
+		4EDAD90D1CB77FA50039317F /* KCLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLayer.h; sourceTree = "<group>"; };
+		4EDAD90E1CB77FA50039317F /* KCLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLayer.m; sourceTree = "<group>"; };
 		4EF43CC91BF43F46006D87DA /* ExternFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternFunction.m; sourceTree = "<group>"; };
 		4EF43CCA1BF43F46006D87DA /* ExternFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternFunction.h; sourceTree = "<group>"; };
 		4EF43CCC1BF4708A006D87DA /* Image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Image.bundle; sourceTree = "<group>"; };
@@ -143,6 +164,20 @@
 				4E90FF551BA2B0040082BA78 /* Quartz2DViewController.m */,
 				4EF43CCA1BF43F46006D87DA /* ExternFunction.h */,
 				4EF43CC91BF43F46006D87DA /* ExternFunction.m */,
+				4EA44C231CABADB600BDE588 /* BrokenLine.h */,
+				4EA44C241CABADB600BDE588 /* BrokenLine.m */,
+				4E6081D91CB5F4DC00A6E73A /* DrawGraphicsViewController.h */,
+				4E6081DA1CB5F4DC00A6E73A /* DrawGraphicsViewController.m */,
+				4EDAD90D1CB77FA50039317F /* KCLayer.h */,
+				4EDAD90E1CB77FA50039317F /* KCLayer.m */,
+				4E0476D61CBDDE0B00F3D206 /* RingViewController.h */,
+				4E0476D71CBDDE0B00F3D206 /* RingViewController.m */,
+				4E0476DC1CBE11FA00F3D206 /* OpenGLViewController.h */,
+				4E0476DD1CBE11FA00F3D206 /* OpenGLViewController.m */,
+				4E0476DF1CBE129E00F3D206 /* OpenGLView.h */,
+				4E0476E01CBE129E00F3D206 /* OpenGLView.m */,
+				4E0476E21CBE2B3D00F3D206 /* ImageFilterViewController.h */,
+				4E0476E31CBE2B3D00F3D206 /* ImageFilterViewController.m */,
 			);
 			path = MyAnimation;
 			sourceTree = "<group>";
@@ -282,13 +317,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E8C52501BA11C7400118205 /* AppDelegate.m in Sources */,
+				4E0476D81CBDDE0B00F3D206 /* RingViewController.m in Sources */,
 				4E8C52811BA159BF00118205 /* TransitionViewController.m in Sources */,
+				4E0476DE1CBE11FA00F3D206 /* OpenGLViewController.m in Sources */,
+				4E0476E11CBE129E00F3D206 /* OpenGLView.m in Sources */,
 				4EF43CCB1BF43F46006D87DA /* ExternFunction.m in Sources */,
+				4EDAD90F1CB77FA50039317F /* KCLayer.m in Sources */,
 				4E8C524D1BA11C7400118205 /* main.m in Sources */,
+				4EA44C251CABADB600BDE588 /* BrokenLine.m in Sources */,
+				4E6081DB1CB5F4DC00A6E73A /* DrawGraphicsViewController.m in Sources */,
 				4E8C527E1BA1570B00118205 /* BasicAnimationViewController.m in Sources */,
 				4E90FF531BA2AE6C0082BA78 /* KCView.m in Sources */,
 				4E8C52721BA11D1C00118205 /* HomeViewController.m in Sources */,
 				4E8C52771BA12F9E00118205 /* KeyAnimationViewController.m in Sources */,
+				4E0476E41CBE2B3D00F3D206 /* ImageFilterViewController.m in Sources */,
 				4E90FF561BA2B0040082BA78 /* Quartz2DViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

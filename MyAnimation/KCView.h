@@ -10,4 +10,5 @@
 
 @interface KCView : UIView
 
+- (void)drawMutableLine:(CGFloat)progress;
 @end

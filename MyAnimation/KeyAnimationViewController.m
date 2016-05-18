@@ -37,7 +37,34 @@
     layer.contents = (id)[UIImage imageNamed:@"share_zone"].CGImage;
     [self.view.layer addSublayer:layer];
     
-    [self groupAnimation];
+//    [self groupAnimation];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self revolution];
+    
+    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+}
+
+- (void)revolution
+{
+    CGSize size = self.view.frame.size;
+    CGFloat width = 200;
+    CGFloat lineWidth = 6;
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width/2, size.height/2) radius:width/2 - lineWidth/2 startAngle:0 endAngle:M_PI*2 clockwise:YES];
+    
+    CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    anim.path = path.CGPath;
+    anim.duration = 4.0;
+    anim.calculationMode = kCAAnimationPaced;
+    anim.rotationMode = kCAAnimationRotateAuto;
+    anim.repeatCount = HUGE_VALF;
+    
+    [layer addAnimation:anim forKey:@"revolution"];
 }
 
 - (CAKeyframeAnimation *)translationAnimation
